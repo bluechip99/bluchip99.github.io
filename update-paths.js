@@ -21,7 +21,8 @@ const replacements = [
   { search: /\/_next\/image\?url=%2Fimages%2F/g, replace: 'static/media/' },
   { search: /\/_next\/static\/chunks\//g, replace: 'static/chunks/' },
   { search: /\/_next\/static\/css\//g, replace: 'static/css/' },
-  { search: /\/_next\/static\/media\//g, replace: 'static/media/' }
+  { search: /\/_next\/static\/media\//g, replace: 'static/media/' },
+  { search: /images\//g, replace: 'static/media/' } // Add this line
 ];
 
 // Update each HTML file
