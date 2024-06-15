@@ -17,11 +17,11 @@ const htmlFiles = [
 
 // Replacements to apply to the HTML files
 const replacements = [
-  { search: /href="\/static\//g, replace: 'href="static/' },
-  { search: /src="\/static\//g, replace: 'src="static/' },
-  { search: /src="\/chunks\//g, replace: 'src="chunks/' },
-  { search: /src="\/_next\/static\/chunks\//g, replace: 'src="static/chunks/' },
-  { search: /src="\/_next\/static\/media\//g, replace: 'src="static/media/' }
+  { search: /\/_next\/static\//g, replace: 'static/' },
+  { search: /\/_next\/image\?url=%2Fimages%2F/g, replace: 'static/media/' },
+  { search: /\/_next\/static\/chunks\//g, replace: 'static/chunks/' },
+  { search: /\/_next\/static\/css\//g, replace: 'static/css/' },
+  { search: /\/_next\/static\/media\//g, replace: 'static/media/' }
 ];
 
 // Update each HTML file
